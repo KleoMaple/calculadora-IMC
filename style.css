@@ -1,0 +1,115 @@
+.container {
+  background-color: lightpink;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+h1{
+    text-align: center;
+}
+
+
+input[type="number"],
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  input[type="number"],
+  button {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+/* Estilos base */
+tabla {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+form {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 50%;
+  margin-right: 10px;
+}
+section {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 50%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+.verde {
+  background-color: green;
+  color: white;
+}
+.naranja {
+  background-color: orange;
+  color: white;
+}
+.amarilla {
+  background-color: yellow;
+  color: black;
+}
+.roja {
+  background-color: red;
+  color: white;
+}
+
+/* Estilos de media queries */
+@media screen and (max-width: 768px) {
+  form {
+    width: 100%;
+    margin-right: 0;
+  }
+  section {
+    width: 100%;
+  }
+  table {
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  th, td {
+    display: block;
+    width: 100%;
+  }
+  th {
+    text-align: center;
+  }
+  .verde, .naranja, .amarilla, .roja {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+}
+

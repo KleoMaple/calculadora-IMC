@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de IMC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Calculadora de IMC</h1>
+		<form>
+			<label for="peso">Peso (kg): </label>
+			<input type="number" id="peso" name="peso" required>
+			<br>
+			<label for="altura">Altura (cm): </label>
+			<input type="number" id="altura" name="altura" required>
+			<br><br>
+			<button type="button" onclick="calcularIMC()">Calcular IMC</button>
+		</form>
+
+		<div id="resultado"></div>
+	</div>
+	<script src="script.js"></script>
+    <section>
+	<h2>Niveles de IMC</h2>
+          <div class="tabla">
+	<table>
+		<thead>
+			<tr>
+				<th>Descripción</th>
+				<th>IMC</th>
+			</tr>
+		</thead>
+		<tbody>
+            <tr>
+				<td class="roja">Desnutricion severa</td>
+				<td class="roja">Menor de 16</td>
+			</tr>
+            <tr>
+				<td class="naranja">Desnutricion moderada</td>
+				<td class="naranja">16.1-18.4</td>
+			</tr>
+			<tr>
+				<td class="amarilla">Bajo peso</td>
+				<td class="amarilla">18.5-22</td>
+			</tr>
+			<tr>
+				<td class="verde">Normal</td>
+				<td class="verde">22.1 - 24.9</td>
+			</tr>
+			<tr>
+				<td class="amarilla">Sobrepeso</td>
+				<td class="amarilla">25 - 29.9</td>
+			</tr>
+			<tr>
+				<td class="naranja">Obesidad grado 1</td>
+				<td class="naranja">30 - 34.9</td>
+			</tr>
+			<tr>
+				<td class="roja">Obesidad grado 2</td>
+				<td class="roja">35 - 39.9</td>
+			</tr>
+			<tr>
+				<td class="roja">Obesidad grado 3</td>
+				<td class="roja">40 o más</td>
+			</tr>
+		</tbody>
+	</table>
+        </div>
+</section>
+</body>
+</html>
+
